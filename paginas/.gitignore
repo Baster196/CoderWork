@@ -1,0 +1,7 @@
+node_modules/
+Wireframes_escritorio/
+Wireframes_mobiles/
+*.log
+*.map
+*.ai
+*.psd
