@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    background: rgb(255,201,150);
+    background: radial-gradient(circle, rgba(255,201,150,1) 12%, rgba(244,190,97,1) 50%, rgba(226,183,235,1) 100%);
+    bottom: 0;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    .redes{
+        display: flex;
+        justify-content: flex-end;
+        margin: 30px;
+        a{
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+}
+

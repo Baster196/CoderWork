@@ -1,0 +1,113 @@
+@media (width < 768px){
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .logo{
+        display: none;
+    }
+
+    .portada{
+        width: 100%;
+    }
+
+    main{
+        padding: 0;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .texto p{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .productos figure{
+        width: 100%;
+    }
+
+    .tienda .acciones{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tienda input{
+        padding: 0;
+        margin: 0;
+    }
+
+    .filtros{
+        display: none;
+    }
+
+    .tienda{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tienda .prod1,.prod2,.prod3,.prod4,.prod5,.prod6{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tienda .prod1{
+        width: 100%;
+        padding: 0;
+    }
+
+    .tienda .prod1 p{
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .tienda .prod2{
+        margin: 0 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .prod1 img{
+        width: 100%;
+    }
+    
+    .prod2 img{
+        width: 100%;
+    }
+
+    .prod3 img{
+        width: 100%;
+    }
+
+    .prod4 img{
+        width: 100%;
+    }
+
+    .prod5 img{
+        width: 100%;
+    }
+
+    .prod6 img{
+        width: 100%;
+    }
+
+    .botonera{
+        background-color: deeppink;
+    }
+}

@@ -1,3 +1,459 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+* {
+  font-family: "Maven Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3, form label {
+  color: deeppink;
+  font-size: 1.8rem;
+  display: block;
+  margin: 4px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: url(../img/fondo.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.logo {
+  width: 90px;
+}
+
+.btn {
+  font-size: 1.8rem;
+}
+
+form {
+  margin: 6px;
+}
+
+main {
+  padding: 20px 30px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+.centrado {
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.face {
+  width: 50px;
+}
+
+.insta {
+  width: 50px;
+}
+
+.whatsapp {
+  width: 55px;
+}
+
+.portada {
+  width: 100%;
+}
+
+button {
+  background-color: deeppink;
+  border: solid 1px rgb(20, 20, 20);
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+
+.texto {
+  width: 60%;
+}
+.texto p {
+  line-height: 3rem;
+}
+
+.centrado {
+  text-align: center;
+}
+
+nav {
+  background: rgb(255, 201, 150);
+  background: radial-gradient(circle, rgb(255, 201, 150) 12%, rgb(244, 190, 97) 50%, rgb(226, 183, 235) 100%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 30px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  padding: 10px;
+  margin: 10px;
+}
+nav ul li a {
+  font-size: 1.8rem;
+  color: rgb(243, 235, 235);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: deeppink;
+}
+
+.cartas {
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.figura1 {
+  width: 100%;
+  grid-area: figura1;
+}
+
+.botonesinput {
+  font-size: 1.8rem;
+}
+
+input {
+  font-size: 1.2rem;
+}
+
+textarea {
+  font-size: 1.2rem;
+}
+
+.figura1 {
+  width: 100%;
+  grid-area: figura1;
+}
+
+.figura2 {
+  grid-area: figura2;
+  width: 100%;
+}
+
+.figura3 {
+  width: 100%;
+  grid-area: figura3;
+}
+
+.productos {
+  display: grid;
+  grid-template-rows: repeat(3, 33%);
+  grid-template-areas: "figura1 ." ". figura2" "figura3 .";
+}
+.productos img {
+  width: 100%;
+}
+.productos figcaption {
+  font-size: 1.8rem;
+  color: deeppink;
+  width: 100%;
+}
+.productos figure {
+  border: 2px solid black;
+  padding: 16px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 11px;
+}
+
+table, tr, th, td {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  border: solid 1px black;
+}
+
+.filtros {
+  padding: 5px;
+  width: 100%;
+}
+.filtros form {
+  margin-left: 0;
+}
+.filtros a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+.filtros li {
+  padding-left: 10px;
+  list-style: none;
+}
+.filtros span {
+  display: block;
+  color: rgb(20, 20, 20);
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.filtros select {
+  color: black;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.acciones {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.acciones button {
+  margin-left: 10px;
+  background-color: deeppink;
+  color: rgb(243, 235, 235);
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+}
+
+.tienda {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% repeat(2, 1fr);
+  grid-template-rows: 10vh 20vh 20vh 20vh 20vh;
+  gap: 2px;
+  grid-template-areas: "acciones acciones acciones" "filtros prod1 prod1" "filtros prod2 prod3" "filtros prod2 prod4" "filtros prod5 prod6";
+}
+.tienda label {
+  color: rgb(20, 20, 20);
+}
+.tienda .acciones {
+  padding: 0 30px;
+  grid-area: acciones;
+  border: solid 2px rgb(20, 20, 20);
+}
+.tienda .filtros {
+  grid-area: filtros;
+}
+.tienda .prod1 {
+  grid-area: prod1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+}
+.tienda .prod2 {
+  width: 100%;
+  grid-area: prod2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+.tienda .prod3 {
+  width: 100%;
+  grid-area: prod3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod4 {
+  width: 100%;
+  grid-area: prod4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod5 {
+  width: 100%;
+  grid-area: prod5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod6 {
+  width: 100%;
+  grid-area: prod6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda section {
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+.prod1 img {
+  width: 15%;
+  padding: 10px;
+}
+
+.prod2 img {
+  width: 40%;
+  padding: 10px;
+}
+
+.prod3 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.prod4 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.prod5 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.prod6 img {
+  width: 25%;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  background: rgb(255, 201, 150);
+  background: radial-gradient(circle, rgb(255, 201, 150) 12%, rgb(244, 190, 97) 50%, rgb(226, 183, 235) 100%);
+  bottom: 0;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+footer .redes {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+}
+footer .redes a {
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (width < 768px) {
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    display: none;
+  }
+  .portada {
+    width: 100%;
+  }
+  main {
+    padding: 0;
+  }
+  .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .texto p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .productos figure {
+    width: 100%;
+  }
+  .tienda .acciones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .tienda input {
+    padding: 0;
+    margin: 0;
+  }
+  .filtros {
+    display: none;
+  }
+  .tienda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tienda .prod1, .prod2, .prod3, .prod4, .prod5, .prod6 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tienda .prod1 {
+    width: 100%;
+    padding: 0;
+  }
+  .tienda .prod1 p {
+    margin: 0 0;
+    width: 100%;
+  }
+  .tienda .prod2 {
+    margin: 0 0;
+    padding: 0;
+    width: 100%;
+  }
+  .prod1 img {
+    width: 100%;
+  }
+  .prod2 img {
+    width: 100%;
+  }
+  .prod3 img {
+    width: 100%;
+  }
+  .prod4 img {
+    width: 100%;
+  }
+  .prod5 img {
+    width: 100%;
+  }
+  .prod6 img {
+    width: 100%;
+  }
+  .botonera {
+    background-color: deeppink;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

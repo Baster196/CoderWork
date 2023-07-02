@@ -1,0 +1,104 @@
+*{
+    font-family: $fontStyle;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1,h2,h3, form label{
+    color: $mainColor;
+    font-size: $textSm;
+    display: block;
+    margin: 4px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-image: $bgImg;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.logo{
+    width: 90px;
+}
+
+.btn{
+    font-size: $textSm;
+}
+
+form{
+    margin: 6px;
+}
+
+main{
+    padding: 20px 30px;
+}
+
+h1{
+    font-size: $textXl;
+    text-align: center;
+}
+
+h2{
+    font-size: $textLg;
+}
+
+h3{
+    font-size: $textMd;
+}
+
+.centrado{
+    text-align: center;
+}
+
+p{
+    font-weight: 300;
+    font-size: $textSm;
+    line-height: $textMd;
+}
+
+.face{
+    width: 50px;
+}
+
+.insta{
+    width: 50px;
+}
+
+.whatsapp{
+    width: 55px;
+}
+
+.portada{
+    width: 100%;
+}
+
+button{
+    background-color: $mainColor;
+    border: solid 1px $colorBlack;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    font-size: $textSm
+}
+
+.texto{
+    width: 60%;
+    p{
+        line-height: 3rem;
+    }
+}
+
+.centrado{
+    text-align: center;
+}

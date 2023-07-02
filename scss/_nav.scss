@@ -1,0 +1,26 @@
+nav{
+    background: $bgColor;
+    background: radial-gradient(circle, rgba(255,201,150,1) 12%, rgba(244,190,97,1) 50%, rgba(226,183,235,1) 100%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 30px;
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                padding: 10px;
+                margin: 10px;
+                a{
+                    font-size: $textSm;
+                    color: $colorWhite;
+                    text-decoration: none;
+                }
+                    a:hover{
+                        background-color: deeppink;
+                    }
+            }
+    }
+}
+

@@ -1,7 +1,16 @@
+//colors & backgrounds/img
+
 $mainColor:deeppink;
-$footColor:rgb(255,201,150);
+$bgColor:rgb(255,201,150);
 $radiantColor: radial-gradient(circle, rgba(255,201,150,1) 12%, rgba(244,190,97,1) 50%, rgba(226,183,235,1) 100%);
+$bgImg: url(../img/fondo.jpg);
+$colorWhite: rgb(243, 235, 235);
+$colorBlack: rgb(20, 20, 20);
 
 //fonts
-
-$mainFont:'Maven Pro', sans-serif;
+$textSsm: 1.2rem;
+$textSm: 1.8rem;
+$textMd: 2.4rem;
+$textLg: 2.6rem;
+$textXl: 2.8rem;
+$fontStyle: 'Maven Pro', sans-serif;
